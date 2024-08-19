@@ -1,4 +1,9 @@
+import { PostContext } from "../utils/context";
+import { useContext } from "react";
+
 function List({ posts }) {
+  const { posts } = useContext(PostContext);
+
   return (
     <ul>
       {posts.map((post, i) => (
@@ -11,4 +16,4 @@ function List({ posts }) {
   );
 }
 
-export default List
+export default List;
