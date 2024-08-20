@@ -1,8 +1,7 @@
-import { PostContext } from "../utils/context";
-import { useContext } from "react";
+import { usePosts } from "../utils/PostContext";
 
-function List({ posts }) {
-  const { posts } = useContext(PostContext);
+function List() {
+  const { posts } = usePosts();
 
   return (
     <ul>
